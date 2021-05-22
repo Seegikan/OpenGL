@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\Grafica\GLFW\glfw\include;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\Grafica\GLFW\glfw\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\POKM\Documents\GitHub\OpenGL\GLFW\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\POKM\Documents\GitHub\OpenGL\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -143,7 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="texturitas.cpp" />
+    <ClCompile Include="Luces.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\glfw\include\shader\shader.h" />

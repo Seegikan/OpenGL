@@ -1,6 +1,6 @@
 
 #version 330 core
-out vec4 FragPos;
+out vec4 fragColor;
 
 in vec3 FragPos;
 in vec3 normal;
@@ -19,17 +19,17 @@ void main()
 	//Luz difusa
 	vec3 norm = normalize(normal); //porcentaje de Luz
 	vec3 lightDir = normalize(lightPos - FragPos);
-	float diff = max (dot(norm, lightDir)), 0.0);
+	float diff = max(dot(norm, lightDir), 0.0);
 	vec3 diffuse = diff * lightColor;
 
 	//Luz espectacular
 	float specularStreght = 0.5;
-	vec3 viewDir = normalize(view - FragPos);
+	vec3 viewDir = normalize(viewPos- FragPos);
 	vec3 reflactDir = reflect(-lightDir, norm);
-	float spec = pow(max(dot(viewDir - reflactDir), 0.0), 32);
-	vec3 specular = specularStreght * spec * lightColor
+	float spec = pow(max(dot(viewDir, reflactDir), 0.0), 32);
+	vec3 specular = specularStreght * spec * lightColor;
 
 	//Convolicionar todo
-	vec3 result = (ambien + diffuse + specular + objectColor) * objectColor; //Generamos una luz combinada
+	vec3 result = (ambien + diffuse + specular) * objectColor; //Generamos una luz combinada
 	fragColor = vec4(result, 1.0);
 }

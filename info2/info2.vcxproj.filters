@@ -18,7 +18,7 @@
     <ClCompile Include="glad.c">
       <Filter>Archivos de encabezado</Filter>
     </ClCompile>
-    <ClCompile Include="texturitas.cpp">
+    <ClCompile Include="Luces.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

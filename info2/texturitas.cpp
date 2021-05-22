@@ -667,6 +667,7 @@ int main() {
 	nuestroShader.setInt("textura1", 0);
 	nuestroShader.setInt("textura2", 1);
 
+
 	glBindVertexArray(VAO2);
 	//loop para que se pueda visualizar nuestra pantalla
 	while (!glfwWindowShouldClose(window))
