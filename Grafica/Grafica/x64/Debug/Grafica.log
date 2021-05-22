@@ -1,0 +1,5 @@
+﻿  texturitas (1).cpp
+F:\Grafica\GLFW\glfw\include\shader\shader.h(48,34): warning C4101: 'e': variable local sin referencia
+F:\Grafica\Grafica\Grafica\texturitas (1).cpp(297,20): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Grafica.vcxproj -> F:\Grafica\Grafica\x64\Debug\Grafica.exe

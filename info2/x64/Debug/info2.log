@@ -1,0 +1,13 @@
+﻿  texturitas.cpp
+F:\Grafica\GLFW\glfw\include\shader\shader.h(48,34): warning C4101: 'e': variable local sin referencia
+F:\Grafica\info2\texturitas.cpp(674,22): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(737,20): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(779,11): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(780,11): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(784,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(785,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(787,10): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(788,10): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\texturitas.cpp(795,28): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  info2.vcxproj -> F:\Grafica\info2\x64\Debug\info2.exe

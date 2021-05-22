@@ -1,0 +1,5 @@
+I:\angel\OneDrive\Documentos\Universidad Amerike\OpenGL\practicas\informatica2\info2\x64\Debug\info2.exe
+I:\angel\OneDrive\Documentos\Universidad Amerike\OpenGL\practicas\informatica2\info2\x64\Debug\info2.pdb
+C:\Users\UNVERSIDAD AMERIKE\Downloads\OpenGL\practicas\informatica2\info2\x64\Debug\info2.exe
+C:\Users\Administrador\Desktop\AlamGG\info2\x64\Debug\info2.exe
+F:\Grafica\info2\x64\Debug\info2.exe
