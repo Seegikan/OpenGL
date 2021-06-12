@@ -1,2 +1,12 @@
-﻿  glad.c
-F:\Nueva carpeta\OpenGl_C++\OpenGL\info2\glad.c(25,10): fatal error C1083: No se puede abrir el archivo incluir: 'glad/glad.h': No such file or directory
+﻿  Barco.cpp
+F:\Grafica\GLFW\glfw\include\shader\shader.h(48,34): warning C4101: 'e': variable local sin referencia
+F:\Grafica\info2\Barco.cpp(313,22): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(979,11): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(980,11): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(984,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(985,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(987,10): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(988,10): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+F:\Grafica\info2\Barco.cpp(995,28): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRT' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  info2.vcxproj -> F:\Grafica\info2\x64\Debug\info2.exe

@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\POKM\Documents\GitHub\OpenGL\GLFW\glfw\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\POKM\Documents\GitHub\OpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\Grafica\GLFW\glfw\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\Grafica\GLFW\glfw\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -142,22 +142,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Barco.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="Luces.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\glfw\include\shader\shader.h" />
     <ClInclude Include="..\GLFW\glfw\include\camara\camara.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="concrete.jpg" />
     <Image Include="cosa1.png" />
     <Image Include="cosa2.jpg" />
+    <Image Include="Cubierta.jpg" />
+    <Image Include="escalon.jpg" />
+    <Image Include="metal.jpg" />
+    <Image Include="Negro.jpg" />
+    <Image Include="Oxido.jpg" />
+    <Image Include="Paared.jpg" />
+    <Image Include="skybox\back.jpg" />
+    <Image Include="skybox\bottom.jpg" />
+    <Image Include="skybox\front.jpg" />
+    <Image Include="skybox\left.jpg" />
+    <Image Include="skybox\right.jpg" />
+    <Image Include="skybox\top.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cubo.fs" />
     <None Include="cubo.vs" />
     <None Include="luz.fs" />
     <None Include="luz.vs" />
+    <None Include="SkyBox.fs" />
+    <None Include="SkyBox.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

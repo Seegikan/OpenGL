@@ -162,8 +162,8 @@ int main() {
 	glGenVertexArrays(1, &VAO2);
 	glBindVertexArray(VAO2);
 
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+	glBindBuffer(GL_FLOAT, VAO);
+	glBindBuffer(GL_ARRAY_BUFFER, EBO);
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*) 0);
 
 	glEnableVertexAttribArray(0);
@@ -183,10 +183,10 @@ int main() {
 
 		//propiedades de la luz
 		nuestroShader.use();
-		nuestroShader.setVec3("objectColor", 1.0f, 0.6f, 0.5f); //color
+		nuestroShader.setVec3("objectColor", 1.0f, 0.6f, 0.5f);
 		nuestroShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 		nuestroShader.setVec3("lightPos", posLuz);
-		nuestroShader.setVec3("viewPos", camera.Position);
+		nuestroShader.setVec3("lightPos", camera.Position);
 
 
 		//mvp
@@ -197,43 +197,30 @@ int main() {
 		nuestroShader.setMat4("view", view);
 
 		glm::mat4 model = glm::mat4(1.0f);
-
-		
-		model = glm::translate(model, glm::vec3(10.0, 0.0f, 0.0f));
-
 		nuestroShader.setMat4("model", model);
 
 		//Renderizado de cubo
 		glBindVertexArray(VAO);
-		glDrawElements(GL_TRIANGLES, 50, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, 60, GL_UNSIGNALED, 0);
 
 		//Configuramos nuestro punto de luz
 		luzShader.use();
 		luzShader.setMat4("projection", projection);
-		luzShader.setMat4("view", view);
+		nuestroShader.setMat4("view", view);
 
-		model = glm::mat4(1.0f);					//x                  y	    z	 
-		model = glm::translate(model, glm::vec3((float)glfwGetTime() / 2, 1.1f, 0.0f));
-		
-		posLuz = glm::vec3((float)glfwGetTime() / 2, 1.1f, 0.0f);
-
-		//cubo narran 10, 0, 0
+		model = glm::mat4(1.0f);
+		model = glm::translate(model, posLuz);
 
 		model = glm::scale(model, glm::vec3(0.2f));
 		luzShader.setMat4("model", model);
-
-	
-
-		glBindVertexArray(VAO2);
-		glDrawElements(GL_TRIANGLES, 50, GL_UNSIGNED_INT, 0);
 
 		//detecte eventos de IO
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
-	
-	glDeleteVertexArrays(1, &VAO);
 	glDeleteVertexArrays(1, &VAO2);
+
+	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
 	glDeleteBuffers(1, &EBO);
 	glfwTerminate();
